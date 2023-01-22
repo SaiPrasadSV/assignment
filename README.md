@@ -46,6 +46,12 @@ python manage.py migrate
 ```
 python manage.py createsuperuser
 ```
+
++ ### Run Django Server 
+```
+python manage.py runserver
+```
+
 <br>
 
 ## Please find the below functionality from Teacher directory
