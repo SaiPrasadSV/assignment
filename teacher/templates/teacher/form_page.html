@@ -1,0 +1,22 @@
+{% extends 'teacher/main.html' %}
+{% block content %}
+<div class="container w-50 mt-4">
+  <form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="card p-4 m-4">
+      <div class="card-body">
+        {{form.as_p}}
+      </div>
+      <div class="row">
+        <div class="col">
+          <!-- <button onclick="window.history.back();" class="btn btn-danger w-100 mt-1 mb-4">Cancel</button> -->
+          <a type="button" class="btn btn-danger w-100 mt-1 mb-4" href="{% url 'teachers' %}">Cancel</a>
+        </div>
+        <div class="col">
+          <button type="submit" name="Submit" value="Submit" class="btn btn-info w-100 mt-1 mb-4">Save</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock content %}
